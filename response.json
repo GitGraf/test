@@ -1,0 +1,30 @@
+[
+	{
+		"id": 0,
+		"username": "Hansi",
+		"meters": [
+			{
+				"id": "AT0000001",
+				"type": "GAS"
+			},
+			{
+				"id": "AT0000002",
+				"type": "ELECTRIC"
+			}
+		]
+	},
+	{
+		"id": 1,
+		"username": "Peter",
+		"meters": [
+			{
+				"id": "AT0000003",
+				"type": "GAS"
+			},
+			{
+				"id": "AT0000004",
+				"type": "SOMETHINGELSE"
+			}
+		]
+	}
+]
