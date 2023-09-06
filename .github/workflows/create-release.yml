@@ -1,0 +1,20 @@
+name: Create Release
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        name: Release 0.4.0
+        tag_name: 0.4.0
+        generate_release_notes: true
+        target_commitish: ${{github.sha}}
+        files: |
+          feature.md
